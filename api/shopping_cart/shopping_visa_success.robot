@@ -46,10 +46,3 @@ Confirm Payment
     ${resp}=    Post Request    alias=shopping    uri=/api/v1/confirmPayment    headers=&{HEADER}    json=${post_body}
     Request Should Be Successful    ${resp}
     Should Be Equal As Strings    ${resp.json()["notify_message"]}    วันเวลาที่ชำระเงิน 1/3/2020 13:30:00 หมายเลขคำสั่งซื้อ ${ORDER_ID} คุณสามารถติดตามสินค้าผ่านช่องทาง Kerry หมายเลข 1785261900
-
-#Git contributor
-#boyone.g@gmail.com
-#zyracuze@gmail.com
-#jengweb@hotmail.com
-
-#send swt-workshop
